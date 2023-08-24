@@ -1,17 +1,25 @@
 {
   "files": {
     "main.css": "/e-commerce/static/css/main.ff160430.css",
-    "main.js": "/e-commerce/static/js/main.bae4b60a.js",
+    "main.js": "/e-commerce/static/js/main.a22fa003.js",
     "static/js/787.dcc73137.chunk.js": "/e-commerce/static/js/787.dcc73137.chunk.js",
     "static/media/logo.png": "/e-commerce/static/media/logo.a79b35c64e279c9839f1.png",
     "static/media/home.avif": "/e-commerce/static/media/home.26320af88649b3720668.avif",
+    "static/media/shirt.JPG": "/e-commerce/static/media/shirt.f1a696eba62068e3e670.JPG",
+    "static/media/phone.JPG": "/e-commerce/static/media/phone.df95531d48e8d1518bed.JPG",
+    "static/media/computer.JPG": "/e-commerce/static/media/computer.01faef021a2887627150.JPG",
+    "static/media/watch.JPG": "/e-commerce/static/media/watch.5637914c952a67dadd2d.JPG",
+    "static/media/tablet.JPG": "/e-commerce/static/media/tablet.34f83585383fb705012c.JPG",
+    "static/media/lamp.JPG": "/e-commerce/static/media/lamp.5ee0f3933887fa5960ac.JPG",
+    "static/media/shoes.JPG": "/e-commerce/static/media/shoes.68bb4a3793d38993312d.JPG",
+    "static/media/book.JPG": "/e-commerce/static/media/book.8fcfb4046ef187f07b25.JPG",
     "index.html": "/e-commerce/index.html",
     "main.ff160430.css.map": "/e-commerce/static/css/main.ff160430.css.map",
-    "main.bae4b60a.js.map": "/e-commerce/static/js/main.bae4b60a.js.map",
+    "main.a22fa003.js.map": "/e-commerce/static/js/main.a22fa003.js.map",
     "787.dcc73137.chunk.js.map": "/e-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff160430.css",
-    "static/js/main.bae4b60a.js"
+    "static/js/main.a22fa003.js"
   ]
 }

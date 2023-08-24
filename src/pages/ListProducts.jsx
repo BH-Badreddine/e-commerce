@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Product from '../components/Product';
-import watch from '../Images/watch.jpg';
-import book from '../Images/book.jpg';
-import shoes from '../Images/shoes.jpg';
-import phone from '../Images/phone.jpg';
-import tablet from '../Images/tablet.jpg';
-import computer from '../Images/computer.jpg';
-import lamp from '../Images/lamp.jpg';
-import shirt from '../Images/shirt.jpg';
+import watch from '../Images/watch.JPG';
+import book from '../Images/book.JPG';
+import shoes from '../Images/shoes.JPG';
+import phone from '../Images/phone.JPG';
+import tablet from '../Images/tablet.JPG';
+import computer from '../Images/computer.JPG';
+import lamp from '../Images/lamp.JPG';
+import shirt from '../Images/shirt.JPG';
 
 
 

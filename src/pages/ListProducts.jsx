@@ -1,18 +1,27 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Product from '../components/Product';
+import watch from '../Images/watch.jpg';
+import book from '../Images/book.jpg';
+import shoes from '../Images/shoes.jpg';
+import phone from '../Images/phone.jpg';
+import tablet from '../Images/tablet.jpg';
+import computer from '../Images/computer.jpg';
+import lamp from '../Images/lamp.jpg';
+import shirt from '../Images/shirt.jpg';
+
 
 
 export default function ListProducts() {
 
   const allProd = [
-    { id: 1, name: 'smart watch', price: 3500, img: './ImagesProd/watch.jpg', categorie: 'electronics' },
-    { id: 2, name: 'book', price: 1500, img: './ImagesProd/book.jpg', categorie: 'other' },
-    { id: 3, name: 'shoes', price: 4500, img: './ImagesProd/shoes.jpg', categorie: 'chaussures & vetements' },
-    { id: 4, name: 'phone', price: 15000, img: './ImagesProd/phone.jpg', categorie: 'electronics' },
-    { id: 5, name: 'tablet', price: 25000, img: './ImagesProd/tablet.jpg', categorie: 'electronics' },
-    { id: 6, name: 'computer', price: 75000, img: './ImagesProd/computer.jpg', categorie: 'electronics' },
-    { id: 7, name: 'lamp', price: 3600, img: './ImagesProd/lamp.jpg', categorie: 'other' },
-    { id: 8, name: 'shirt', price: 2800, img: './ImagesProd/shirt.jpg', categorie: 'chaussures & vetements' },
+    { id: 1, name: 'smart watch', price: 3500, img: watch, categorie: 'electronics' },
+    { id: 2, name: 'book', price: 1500, img: book, categorie: 'other' },
+    { id: 3, name: 'shoes', price: 4500, img: shoes, categorie: 'chaussures & vetements' },
+    { id: 4, name: 'phone', price: 15000, img: phone, categorie: 'electronics' },
+    { id: 5, name: 'tablet', price: 25000, img: tablet, categorie: 'electronics' },
+    { id: 6, name: 'computer', price: 75000, img: computer, categorie: 'electronics' },
+    { id: 7, name: 'lamp', price: 3600, img: lamp, categorie: 'other' },
+    { id: 8, name: 'shirt', price: 2800, img: shirt, categorie: 'chaussures & vetements' },
   ];
   const [Products, setProducts] = useState(allProd);
   const [filteredProducts, setFilteredProducts] = useState([]);

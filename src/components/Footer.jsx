@@ -1,3 +1,4 @@
+import logo from '../Images/logo.png';
 
 export default function Footer() {
 
@@ -5,7 +6,7 @@ export default function Footer() {
         <div className="footer container-fluid">
             <div className="row justify-content-between align-items-end">
                 <div className="col-md-3">
-                    <img src='./logo.png' height='60' width='130' alt='logo' />
+                    <img src={logo} height='60' width='130' alt='logo' />
                 </div>
                 <div className="col-md-3">
                     <p>&copy; 2023 All rights reserved</p>

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { favoriCtx } from '../Contexts/FavoriContext';
 import {Cartctx} from '../Contexts/CartContext';
+import logo from '../Images/logo.png';
 
 
 
@@ -17,7 +18,7 @@ export default function Navbar({Prodfavori, setProdfavori}) {
     return ( <>
         <nav>
             <ul>
-                <li className='logo'><img src='./logo.png' height='90' width='120' alt='logo' /></li>
+                <li className='logo'><img src={logo} height='90' width='120' alt='logo' /></li>
                 <li><NavLink to='/'>Home</NavLink></li>
                 <li><NavLink to='/products'>Our Products</NavLink></li>
                 <li className='favori'><Link to='/favori'>

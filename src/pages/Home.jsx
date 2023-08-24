@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {favoriCtx} from '../Contexts/FavoriContext';
+import home from '../Images/home.avif';
 
 export default function Home() {
 
@@ -12,7 +12,7 @@ export default function Home() {
           <h2>Welcome to the boundless world of online shopping: discover, explore, shop !</h2>
         </div>
         <div className="col-lg-7">
-            <img className='img-fluid' src="./home.avif" height='100%' width='100%' alt="" />
+            <img className='img-fluid' src={home} height='100%' width='100%' alt="" />
         </div>
       </div>
       

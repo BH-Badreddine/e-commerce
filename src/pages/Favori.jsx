@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { favoriCtx } from '../Contexts/FavoriContext';
+
 
 export default function Favori() {
 

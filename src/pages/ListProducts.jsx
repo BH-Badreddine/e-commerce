@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Product from '../components/Product';
+
 import watch from '../Images/watch.JPG';
 import book from '../Images/book.JPG';
 import shoes from '../Images/shoes.JPG';

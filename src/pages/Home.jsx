@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import home from '../Images/home.avif';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
     </div>
     
     <div className="d-flex mx-auto col-5 mt-4 justify-content-center discover">
-      <a href="/products" className='btn btn-success'>Discover products <i className="bi bi-arrow-right ms-2"></i></a>
+      <Link to="/products" className='btn btn-success'>Discover products <i className="bi bi-arrow-right ms-2"></i></Link>
     </div>
     </>
   )

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from "react-router-dom";
 import './App.css';
 import Home from './pages/Home';
 import ListProducts from './pages/ListProducts';
@@ -19,7 +19,7 @@ function App() {
     
       <div className="App">
       
-        <Router>
+      <HashRouter>
           <Navbar />
 
           <Routes>
@@ -30,7 +30,7 @@ function App() {
           </Routes>
 
           <Footer />
-        </Router>
+      </HashRouter>
       
     </div>
    

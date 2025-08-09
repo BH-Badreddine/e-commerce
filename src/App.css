@@ -158,6 +158,17 @@ nav ul li.cart a:hover {
   color: rgb(189, 188, 188);
 }
 
+
+.favori-container, .cart-container {
+  width: 70vw !important;
+  margin-bottom: 80px !important;
+}
+.favori-container .list-favori, .cart-container .list-cart {
+  height: 400px;
+  padding-right: 18px;
+  overflow-y: auto;
+}
+
 .favori-container, .cart-container {
   background-color: white;
   min-height: 40%;
@@ -174,10 +185,12 @@ nav ul li.cart a:hover {
   width: 30px;
   padding-right: 28px;
 }
-.favori-container .item-favori img {
-  margin-left: -35px;
-}
-.favori-container .item-favori {
+
+.favori-container .item-favori, .cart-container .cart-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8px;
   transition: all .4s ease-in-out;
 }
 .favori-container .item-favori:hover {
@@ -289,6 +302,11 @@ nav ul li.cart a:hover {
 }
 
 @media all and (max-width: 991px) {
+  .favori-container, .cart-container {
+    width: 80vw !important;
+    margin-bottom: 150px !important;
+  }
+
   .home {
     min-height: 300px !important;
   }
@@ -310,6 +328,10 @@ nav ul li.cart a:hover {
 }
 
 @media all and (max-width: 768px) {
+  .favori-container, .cart-container {
+    width: 90vw !important;
+  }
+
   .filtre-container {
     width: 90% !important;
     height: 380px !important;

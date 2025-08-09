@@ -15,17 +15,19 @@ export default function Favori() {
         <div className='favori-container'>
             
             <p className='text-center mb-5' style={{fontSize: "28px", fontWeight: 'bold'}}>- You liked {likedProd.length} {likedProd.length === 1? 'product' : 'products'}  ! -</p>
+               <div className="list-favori">
                { likedProd.length > 0 && 
                 likedProd.map(prod => 
-                    <div key={prod.id} className="item-favori row justify-content-evenly align-items-center mt-4">
-                        <img className='col-md-3' src={prod.img} height='80px' width='100%' />
-                        <p className='col-md-4'>{prod.name}</p>
-                        <p className='col-md-3'>{prod.price} </p>
+                    <div key={prod.id} className="item-favori mt-4">
+                        <img className='' src={prod.img} height='80px' width='25%' />
+                        <p className=''>{prod.name}</p>
+                        <p className=''>{prod.price} </p>
                         <button className='btn btn-danger'><i className="bi bi-trash3" onClick={()=>deleteProdFav(prod.id)}></i></button>
                     </div>
                  ) 
                 
                 }
+                </div>
                 
              
             

@@ -22,20 +22,24 @@ export default function Cart() {
         <div className='cart-container'>
             <p className='text-center mb-5' style={{fontSize: "28px", fontWeight: 'bold'}}> -Shopping cart-</p>
 
+            <div className="list-cart">
             {cartItems.length > 0 &&
                 <>
                     {cartItems.map(prod => {
                         if (prod.quantity >= 1) {//afficher seulement les produits dont la quantité est sup ou égale à 1
                             return (
-                                <div key={prod.id} className='cart-item-container row justify-content-start align-items-center mb-4'>
-                                    <img src={prod.img} height='80px' width='100%' className='col-md-3' />
-                                    <p className='col-md-2'> {prod.name} </p>
-                                    <div className='quantity-container col-md-3'>
+                                <div key={prod.id} className='cart-item-container mb-4'>
+                                    <img src={prod.img} height='80px' width='25%' />
+                                    <p className=''> {prod.name} </p>
+
+                                    <div className='quantity-container'>
                                         <button onClick={() => decreaseQuantity(prod)} className='btn me-1'>-</button>
                                         <strong> {prod.quantity} </strong>
                                         <button onClick={() => increaseQuantity(prod)} className='btn ms-1'>+</button>
                                     </div>
-                                    <p className='col-md-3'> {prod.price}<span> x {prod.quantity} </span> </p>
+
+                                    <p className=''> {prod.price}<span> x {prod.quantity} </span> </p>
+
                                     <button className='btn btn-danger' onClick={() => deleteItemFromCart(prod.id)}><i className="bi bi-trash"></i></button>
                                 </div>
                             )
@@ -44,14 +48,21 @@ export default function Cart() {
                         }
 
                     })}
-                    <div className="total-container">
+                    {/* <div className="total-container">
+                        <h3>Total net</h3>
+                        
+                            <p>{total}</p><span>DA</span> 
+
+                    </div> */}
+
+                </>}
+                </div>
+                <div className="total-container">
                         <h3>Total net</h3>
                         
                             <p>{total}</p><span>DA</span> 
 
                     </div>
-
-                </>}
             {cartItems.length === 0 && <h4>No item was added to the cart !</h4>}
 
 

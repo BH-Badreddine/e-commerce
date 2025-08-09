@@ -288,18 +288,6 @@ nav ul li.cart a:hover {
   }
 }
 
-@media all and (max-width: 768px) {
-  .filtre-container {
-    width: 90% !important;
-    height: 380px !important;
-    padding: 12px !important;
-    margin-bottom: 42px !important;
-  }
-
-  .allprod-container {
-    width: 90% !important;
-  }
-}
 @media all and (max-width: 991px) {
   .home {
     min-height: 300px !important;
@@ -317,6 +305,25 @@ nav ul li.cart a:hover {
   }
   .discover a {
     font-size: 18px;
+    margin-bottom: 60px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .filtre-container {
+    width: 90% !important;
+    height: 380px !important;
+    padding: 12px !important;
+    margin-bottom: 42px !important;
+  }
+
+  .allprod-container {
+    width: 90% !important;
+  }
+
+  .discover a {
+    font-size: 16px;
+    margin-bottom: 100px !important;
   }
 }
 

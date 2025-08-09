@@ -18,7 +18,7 @@ function App() {
   return (
     
       <div className="App">
-      
+        <main>
       <HashRouter>
           <Navbar />
 
@@ -31,6 +31,7 @@ function App() {
 
           <Footer />
       </HashRouter>
+      </main>
       
     </div>
    

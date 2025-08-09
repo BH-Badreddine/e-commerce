@@ -7,7 +7,7 @@ export default function Home() {
     
   
   return (<>
-    <div className='container home '>
+    <div className='container home'>
       <div className="row align-items-center justify-content-center">
         <div className="col-lg-5 col-sm-10 slogan">
           <h2>Welcome to the boundless world of online shopping: discover, explore, shop !</h2>

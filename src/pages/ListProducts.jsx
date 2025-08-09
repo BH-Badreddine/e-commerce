@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Product from '../components/Product';
 
-import watch from '../Images/watch.JPG';
-import book from '../Images/book.JPG';
-import shoes from '../Images/shoes.JPG';
-import phone from '../Images/phone.JPG';
-import tablet from '../Images/tablet.JPG';
-import computer from '../Images/computer.JPG';
-import lamp from '../Images/lamp.JPG';
-import shirt from '../Images/shirt.JPG';
+import watch from '../Images/watch.jpg';
+import book from '../Images/book.jpg';
+import shoes from '../Images/shoes.jpg';
+import phone from '../Images/phone.jpg';
+import tablet from '../Images/tablet.jpg';
+import computer from '../Images/computer.jpg';
+import lamp from '../Images/lamp.jpg';
+import shirt from '../Images/shirt.jpg';
 
 
 
-export default function ListProducts() {
+export default function ListProducts() { 
 
   const allProd = [
     { id: 1, name: 'smart watch', price: 3500, img: watch, categorie: 'electronics' },
@@ -103,11 +103,11 @@ export default function ListProducts() {
 
 
   return (<>
-    <div className='container-fluid '>
+    <div className='container-fluid'>
       <h1>- List of all products -</h1>
 
       <div className="row justify-content-around mt-5">
-        <div className="col-md-3 col-sm-5 mb-2 filtre-container me-2">
+        <div className="col-lg-3 col-md-4 col-sm-5 mb-2 filtre-container me-1">
           <h3>Filtre</h3> <i class="bi bi-funnel-fill"></i>
 
           <label>Price</label><br />
@@ -124,11 +124,14 @@ export default function ListProducts() {
             <li><input ref={element => categRef.current[2] = element} onChange={handleCateg} name='categ' type='checkbox' value='other' /> other </li>
             </ul>
 
-          <button className='btn btn-secondary offset-7 mt-5' onClick={clearFilterHandler}>Clear filtres</button>
+          {/* <button className='clear-filtre-btn btn btn-secondary offset-7 mt-5' onClick={clearFilterHandler}>Clear filtres</button> */}
+          <div className="d-flex justify-content-end mt-5">
+            <button className='clear-filtre-btn btn btn-secondary' onClick={clearFilterHandler}>Clear filtres</button>
+          </div>
 
         </div>
 
-        <div className="col-md-8 allprod-container">
+        <div className="col-lg-8 col-md-7 allprod-container">
           <div className="row justify-content-evenly">
             { !isFiltered &&
               Products.map(item => <Product key={item.id} item={item}  />)

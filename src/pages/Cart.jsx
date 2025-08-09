@@ -20,7 +20,7 @@ export default function Cart() {
 
     return (
         <div className='cart-container'>
-            <h2 className='mb-5'> -Shopping cart-</h2>
+            <p className='text-center mb-5' style={{fontSize: "28px", fontWeight: 'bold'}}> -Shopping cart-</p>
 
             {cartItems.length > 0 &&
                 <>

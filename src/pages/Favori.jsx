@@ -14,10 +14,10 @@ export default function Favori() {
     return (
         <div className='favori-container'>
             
-            <p className='text-center display-6'>- You liked {likedProd.length} {likedProd.length === 1? 'product' : 'products'}  ! -</p>
+            <p className='text-center mb-5' style={{fontSize: "28px", fontWeight: 'bold'}}>- You liked {likedProd.length} {likedProd.length === 1? 'product' : 'products'}  ! -</p>
                { likedProd.length > 0 && 
                 likedProd.map(prod => 
-                    <div key={prod.id} className="item-favori row justify-content-evenly align-items-center mb-3">
+                    <div key={prod.id} className="item-favori row justify-content-evenly align-items-center mt-4">
                         <img className='col-md-3' src={prod.img} height='80px' width='100%' />
                         <p className='col-md-4'>{prod.name}</p>
                         <p className='col-md-3'>{prod.price} </p>

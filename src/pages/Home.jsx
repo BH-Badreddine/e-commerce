@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
 
-   
+    
   
   return (<>
     <div className='container home '>
       <div className="row align-items-center justify-content-center">
-        <div className="col-lg-5 slogan">
+        <div className="col-lg-5 col-sm-10 slogan">
           <h2>Welcome to the boundless world of online shopping: discover, explore, shop !</h2>
         </div>
-        <div className="col-lg-7">
-            <img className='img-fluid' src={home} height='100%' width='100%' alt="" />
+        <div className="col-lg-7 col-sm-10 shopping-img-container" style={{paddingLeft: '0', paddingRight: '0'}}>
+            <img className='shopping-img' src={home} height={500} width='100%' alt="" />
         </div>
       </div>
       
